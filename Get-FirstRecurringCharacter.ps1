@@ -21,7 +21,7 @@ function Get-FirstRecurringCharacter {
         # https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1.add?view=net-5.0
         # Conditionally true on negation (not[!] false)  
         if (!$set.Add($char)) {
-            # Element ($char) is already present in $set so return it is the recurring character
+            # Element ($char) is already present in $set so return it as the recurring character
             return $char
         }
     }
